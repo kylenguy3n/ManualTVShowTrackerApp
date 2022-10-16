@@ -17,8 +17,6 @@ public abstract class TelevisionComponent {
         this.dateReleased = "";
     }
 
-    //setters
-
     // REQUIRES: 1 <= rating <= 10
     // MODIFIES: this
     // EFFECTS: sets a rating for the television component

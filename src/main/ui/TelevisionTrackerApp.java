@@ -23,21 +23,22 @@ public class TelevisionTrackerApp {
         runTelevisionApp();
     }
 
+    // NOTE: will change menuKeyCommand primitive to using the keyCommand() method in the future
     // EFFECTS: displays welcome message and processes user input at the main menu
-    public void runTelevisionApp() {
+    private void runTelevisionApp() {
         boolean keepRunning = true;
-        String keyCommand = null;
+        String menuKeyCommand = null;
 
         System.out.println("\nWelcome to the Television Tracker Application.");
 
         while (keepRunning) {
             displayMainMenu();
-            keyCommand = input.nextLine();
+            menuKeyCommand = input.nextLine();
 
-            if (keyCommand.equals("5")) {
+            if (menuKeyCommand.equals("5")) {
                 keepRunning = false;
             } else {
-                processKeyCommand(keyCommand);
+                processMenuKeyCommand(menuKeyCommand);
             }
         }
         System.out.println("\nYou have exited the application.");
@@ -55,58 +56,100 @@ public class TelevisionTrackerApp {
     }
 
     // EFFECTS: processes user input at main menu
-    private void processKeyCommand(String keyCommand) {
-        if (keyCommand.equals("1")) {
+    private void processMenuKeyCommand(String menuKeyCommand) {
+        if (menuKeyCommand.equals("1")) {
             accessPlanToWatch();
-        } else if (keyCommand.equals("2")) {
+        } else if (menuKeyCommand.equals("2")) {
             accessCurrentlyWatching();
-        } else if (keyCommand.equals("3")) {
+        } else if (menuKeyCommand.equals("3")) {
             accessCompleted();
-        } else if (keyCommand.equals("4")) {
+        } else if (menuKeyCommand.equals("4")) {
             accessFavouriteShows();
         } else {
             invalidButton();
         }
     }
 
-    // EFFECTS:
+    // EFFECTS: accesses and displays Plan to Watch list menu and processes user input at the submenu
     private void accessPlanToWatch() {
         System.out.println("\n'Plan to Watch' list");
-        // STUB
+        processSubMenuKeyCommand(1);
     }
 
-    // EFFECTS:
+    // EFFECTS: accesses and displays Currently Watching list menu and processes user input at the submenu
     private void accessCurrentlyWatching() {
         System.out.println("\n'Currently Watching' list");
-        // STUB
+        processSubMenuKeyCommand(2);
     }
 
-    // EFFECTS:
+    // EFFECTS: accesses and displays Completed list menu and processes user input at the submenu
     private void accessCompleted() {
         System.out.println("\n'Completed' list");
-        // STUB
+        processSubMenuKeyCommand(3);
     }
 
-    // EFFECTS:
+    // EFFECTS: accesses and displays Favourite Shows list menu and processes user input at the submenu
     private void accessFavouriteShows() {
         System.out.println("\n'Favourite Shows' list");
-        // STUB
+        processSubMenuKeyCommand(4);
     }
 
-
-
-    // EFFECTS:
+    // EFFECTS: displays submenu options for user to choose
     private void displaySubMenu() {
         System.out.println("\nPlease choose one of the following options:");
         System.out.println("---------------------------------------------");
         System.out.println("\t(1) View list");
         System.out.println("\t(2) Add new show to list");
         System.out.println("\t(3) Remove show from list");
-        System.out.println("\t(4) Copy show to different list");
-        System.out.println("\t(5) Move show to different list");
+//        System.out.println("\t(4) Copy show to different list");
+//        System.out.println("\t(5) Move show to different list");
+    }
+
+    // EFFECTS: processes user input at main menu
+    private void processSubMenuKeyCommand(int whichList) {
+        displaySubMenu();
+        switch (keyCommand()) {
+            case "1":
+                printWhichTelevisionList(whichList);
+                break;
+            case "2":
+
+                break;
+            case "3":
+
+                break;
+            case "4":
+
+                break;
+            default:
+                invalidButton();
+        }
+    }
+
+    private void printWhichTelevisionList(int whichList) {
+        switch (whichList) {
+            case 1:
+                System.out.println(planToWatchList.getTelevisionShowList());
+                break;
+            case 2:
+                System.out.println((currentlyWatchingList.getTelevisionShowList()));
+                break;
+            case 3:
+                System.out.println(completedList.getTelevisionShowList());
+                break;
+            case 4:
+                System.out.println((favouriteShowsList.getTelevisionShowList()));
+                break;
+        }
     }
 
     private void invalidButton() {
         System.out.println("You have not entered a valid option. Please try again.");
     }
+
+    // EFFECTS: returns user input
+    private String keyCommand() {
+        return input.nextLine();
+    }
+
 }
