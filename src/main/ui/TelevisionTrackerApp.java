@@ -1,14 +1,14 @@
 package ui;
 
-import model.TelevisionList;
+import model.TelevisionShowList;
 
 public class TelevisionTrackerApp {
-    private TelevisionList toWatchList;
-    private TelevisionList currentlyWatchingList;
-    private TelevisionList completedWatchList;
-    private TelevisionList favouritesList;
+    private TelevisionShowList planToWatchList;
+    private TelevisionShowList currentlyWatchingList;
+    private TelevisionShowList completedWatchingList;
+    private TelevisionShowList favouritesList;
 
-    // EFFECTS: runs the application
+    // EFFECTS: runs the television tracker application
     public TelevisionTrackerApp() {
         runApp();
     }

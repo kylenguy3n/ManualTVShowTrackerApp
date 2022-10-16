@@ -7,17 +7,12 @@ public class TelevisionShow extends TelevisionComponent {
     private List<TelevisionSeason> showSeasons;
     private String description;
 
-    // EFFECTS: constructs television show
+    // EFFECTS: constructs television show with the name of the show, an initial unset rating, an unset date of release,
+    //          and an empty list to store the seasons of the show
     public TelevisionShow(String showName) {
         super(0, showName);
         showSeasons = new ArrayList<>();
         this.description = "";
-    }
-
-    // MODIFIES: this
-    // EFFECTS: sets a description for the television component
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     // MODIFIES: this
@@ -26,12 +21,18 @@ public class TelevisionShow extends TelevisionComponent {
         showSeasons.add(season);
     }
 
-    // getters
-    public String getDescription() {
-        return this.description;
+    // MODIFIES: this
+    // EFFECTS: sets a description for the television component
+    public void setDescription(String description) {
+        this.description = description;
     }
 
+    // getters
     public List<TelevisionSeason> getShowSeasons() {
         return this.showSeasons;
+    }
+
+    public String getDescription() {
+        return this.description;
     }
 }

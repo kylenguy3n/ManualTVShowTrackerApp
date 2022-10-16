@@ -1,20 +1,20 @@
 package model;
 
-import java.util.Date;
-
 public abstract class TelevisionComponent {
     protected int number;
     protected String name;
     protected int rating;
-    protected Date dateReleased;
+    protected String dateReleased;
 
     // REQUIRES: number >= 0
-    // EFFECTS: constructs television component
+    // EFFECTS: constructs television component (a show, season, or episode class) with a number for which it appears
+    //          in its television superclass (0 for the top class of show), the name of the component, an initial unset
+    //          rating, and an unset date of release
     protected TelevisionComponent(int number, String name) {
         this.number = number;
         this.name = name;
         this.rating = 0;
-        this.dateReleased = null;
+        this.dateReleased = "";
     }
 
     //setters
@@ -26,16 +26,23 @@ public abstract class TelevisionComponent {
         this.rating = rating;
     }
 
+    // REQUIRES: dateReleased must be in format of "yyyy-mm-dd"
     // MODIFIES: this
     // EFFECTS: sets date released for the television component
-    public void setDateReleased(Date dateReleased) {
+    public void setDateReleased(String dateReleased) {
         this.dateReleased = dateReleased;
     }
 
     // MODIFIES: this
-    // EFFECTS: resets rating back to having no rating
-    public void removeRating() {
-        this.rating = 0;
+    // EFFECTS: if rating has been set for the television component, resets rating back to having no rating and returns
+    //          true; otherwise returns false
+    public boolean removeRating() {
+        if (rating != 0) {
+            this.rating = 0;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     // getters
@@ -51,7 +58,7 @@ public abstract class TelevisionComponent {
         return this.rating;
     }
 
-    public Date getDateReleased() {
+    public String getDateReleased() {
         return this.dateReleased;
     }
 }
