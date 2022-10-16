@@ -18,12 +18,12 @@
 I am interested in keeping track of shows I have already watched or am currently watching, as well as give a rating to 
 the show to express how much I enjoyed it. I would like to save shows by personal favourite. This application will be
 useful to me because if I ever want to remember which shows I have seen, and if they were shows I was entertained by, I
-can simply refer back to the TV Show Tracker, especially if the amount of shows I've seen start accumulating and I start
-to forget some even existed.
+can simply refer back to the TV Show Tracker, especially if the amount of shows I've seen start accumulating, and I 
+start to forget some even existed.
 
 ## User Stories
-- As a user, I want to be able to have a list of shows I want to watch and update the list with show I have not seen yet
-that interest me or that I will want to watch
+- As a user, I want to be able to have a list of shows I want to watch and update the list with shows I have not seen 
+yet that interest me or that I will want to watch
 - As a user, I want to be able to have a list of shows I am currently watching, and be able to update which season and 
 episode that I am currently on with all of these shows in the list
 - As a user, I want to be able to have a list of shows I have completed, as well as have a rating for these shows should
