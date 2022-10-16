@@ -34,8 +34,8 @@ public class TelevisionShowTest {
         assertEquals(10, showTest1.getRating());
         showTest2.setRating(1);
         assertEquals(1, showTest2.getRating());
-        showTest1.removeRating();
-        assertEquals(0, showTest1.getRating());
+        showTest1.setRating(5);
+        assertEquals(5, showTest1.getRating());
     }
 
     @Test

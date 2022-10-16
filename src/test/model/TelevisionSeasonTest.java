@@ -33,6 +33,8 @@ public class TelevisionSeasonTest {
         assertEquals(10, seasonTest1.getRating());
         seasonTest2.setRating(1);
         assertEquals(1, seasonTest2.getRating());
+        seasonTest1.setRating(5);
+        assertEquals(5, seasonTest1.getRating());
     }
 
     @Test

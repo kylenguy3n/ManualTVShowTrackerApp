@@ -29,6 +29,8 @@ public class TelevisionEpisodeTest {
         assertEquals(10, episodeTest1.getRating());
         episodeTest2.setRating(1);
         assertEquals(1, episodeTest2.getRating());
+        episodeTest1.setRating(5);
+        assertEquals(5, episodeTest1.getRating());
     }
 
     @Test
