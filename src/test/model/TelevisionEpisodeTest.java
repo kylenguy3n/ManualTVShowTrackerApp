@@ -5,10 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class TelevisionEpisodeTest {
-
-    TelevisionEpisode episodeTest1;
-    TelevisionEpisode episodeTest2;
+public class TelevisionEpisodeTest {
+    private TelevisionEpisode episodeTest1;
+    private TelevisionEpisode episodeTest2;
 
     @BeforeEach
     public void runBefore() {
@@ -21,6 +20,5 @@ class TelevisionEpisodeTest {
         assertEquals("Kassa", episodeTest1.getName());
         assertEquals( 1, episodeTest1.getNumber());
         assertEquals(0, episodeTest1.getRating());
-        assertEquals("", episodeTest1.getDescription());
     }
 }

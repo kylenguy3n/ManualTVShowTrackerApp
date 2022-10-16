@@ -6,8 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TelevisionSeasonTest {
-
-    TelevisionSeason seasonTest1;
+    private TelevisionSeason seasonTest1;
 
     @BeforeEach
     public void runBefore() {
@@ -19,7 +18,6 @@ public class TelevisionSeasonTest {
         assertEquals("Season 1", seasonTest1.getName());
         assertEquals( 1, seasonTest1.getNumber());
         assertEquals(0, seasonTest1.getRating());
-        assertEquals("", seasonTest1.getDescription());
     }
 }
 
