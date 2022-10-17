@@ -59,7 +59,6 @@ public class TelevisionTrackerApp {
         System.out.println("\t(5) Quit");
     }
 
-    // MODIFIES: this
     // EFFECTS: processes user input at the main menu
     private void processMenuKeyCommand(String menuKeyCommand) {
         if (menuKeyCommand.equals("1")) {
@@ -75,35 +74,30 @@ public class TelevisionTrackerApp {
         }
     }
 
-    // MODIFIES: this
     // EFFECTS: accesses and displays 'Plan to Watch' list menu and processes user input at the submenu
     private void accessPlanToWatch() {
         System.out.println("\n'" + planToWatchList.getListName() + "' list");
         processSubMenuKeyCommand(1);
     }
 
-    // MODIFIES: this
     // EFFECTS: accesses and displays 'Currently Watching' list menu and processes user input at the submenu
     private void accessCurrentlyWatching() {
         System.out.println("\n'" + currentlyWatchingList.getListName() + "' list");
         processSubMenuKeyCommand(2);
     }
 
-    // MODIFIES: this
     // EFFECTS: accesses and displays 'Completed' list menu and processes user input at the submenu
     private void accessCompleted() {
         System.out.println("\n'" + completedList.getListName() + "' list");
         processSubMenuKeyCommand(3);
     }
 
-    // MODIFIES: this
     // EFFECTS: accesses and displays 'Favourite Shows' list menu and processes user input at the submenu
     private void accessFavouriteShows() {
         System.out.println("\n'" + favouriteShowsList.getListName() + "' list");
         processSubMenuKeyCommand(4);
     }
 
-    // MODIFIES: this
     // EFFECTS: displays and processes user input at the submenu
     private void processSubMenuKeyCommand(int whichList) {
         displaySubMenu();
@@ -116,10 +110,10 @@ public class TelevisionTrackerApp {
                 addShowSetup(whichList);
                 break;
             case "3":
-                removeShow(whichList);
+                removeShowSetup(whichList);
                 break;
             case "4":
-                rateShow(whichList);
+                rateShowSetup(whichList);
                 break;
 //            case "5":
 //                // STUB // TODO
@@ -165,7 +159,7 @@ public class TelevisionTrackerApp {
         System.out.println("End of list");
     }
 
-    // EFFECTS: prints out the television list show by show
+    // EFFECTS: prints out the entire television list show by show
     private void printTelevisionList(List<TelevisionShow> rightList) {
         for (TelevisionShow show : rightList) {
             System.out.println(show.getTitle());
@@ -175,26 +169,26 @@ public class TelevisionTrackerApp {
     // MODIFIES: this
     // EFFECTS: makes user construct the television show that is then added to the desired television list
     private void addShowSetup(int whichList) {
-        System.out.println("\nAdd new show:");
-        System.out.println("Please enter the name of the show");
+        System.out.println("\nWhat show would you like to add to this list?");
+        System.out.println("Please enter the name of the show:");
         TelevisionShow show = new TelevisionShow(keyCommand());
         setupShowSeasons(show);
         showDescriptionAdder(show);
         addShowToWhichList(show, whichList);
-        System.out.println("\n'" + show.getTitle() + "' has been added to the list");
+        System.out.println("\n'" + show.getTitle() + "' has been added to the list.");
     }
 
     // MODIFIES: TelevisionShow
     // EFFECTS: assigns number of seasons to add to the television show
     private void setupShowSeasons(TelevisionShow show) {
         System.out.println("\nHow many seasons are in this show?");
-        int numberOfSeasons = Integer.parseInt(keyCommand());
+        String numberOfSeasons = keyCommand();
 
-        if (numberOfSeasons <= 0) {
+        if (Integer.parseInt(numberOfSeasons) <= 0) {
             invalidKey();
             setupShowSeasons(show);
         } else {
-            for (int i = 1; i <= numberOfSeasons; i++) {
+            for (int i = 1; i <= Integer.parseInt(numberOfSeasons); i++) {
                 TelevisionSeason season = new TelevisionSeason(i, "Season " + Integer.toString(i));
                 show.addSeasonToShow(season);
                 setupSeasonEpisodes(season, i);
@@ -206,13 +200,13 @@ public class TelevisionTrackerApp {
     // EFFECTS: assigns number of episodes to add to the television season
     private void setupSeasonEpisodes(TelevisionSeason season, int i) {
         System.out.println("\nHow many episodes are in season " + Integer.toString(i) + "?");
-        int numberOfEpisodes = Integer.parseInt(keyCommand());
+        String numberOfEpisodes = keyCommand();
 
-        if (numberOfEpisodes <= 0) {
+        if (Integer.parseInt(numberOfEpisodes) <= 0) {
             invalidKey();
             setupSeasonEpisodes(season, i);
         } else {
-            for (int j = 1; j <= numberOfEpisodes; j++) {
+            for (int j = 1; j <= Integer.parseInt(numberOfEpisodes); j++) {
                 TelevisionEpisode episode = new TelevisionEpisode(j, "Episode " + Integer.toString(j));
                 season.addEpisodeToSeason(episode);
             }
@@ -241,15 +235,16 @@ public class TelevisionTrackerApp {
     // MODIFIES: TelevisionShow
     // EFFECTS: provides user options to add a description to the recently added television show
     private void showDescriptionAdder(TelevisionShow show) {
-        showDescriptionAdderMenu();
+        displayShowDescriptionAdderMenu();
 
         switch (keyCommand()) {
             case "1":
                 System.out.println("\nType in the show's description:");
                 show.setDescription(keyCommand());
-                System.out.println("\nThe show's description has been set");
+                System.out.println("\nThe show's description has been set.");
                 break;
             case "2":
+                System.out.println("\nThe show's description will be set as empty.");
                 break;
             default:
                 invalidKey();
@@ -258,23 +253,120 @@ public class TelevisionTrackerApp {
     }
 
     // EFFECTS: displays options for choosing to add a description to the recently added television show
-    private void showDescriptionAdderMenu() {
+    private void displayShowDescriptionAdderMenu() {
         System.out.println("\nDo you want to add a description for this show?");
         System.out.println("---------------------------------------------");
         System.out.println("(1) Yes");
         System.out.println("(2) No");
     }
 
-    // MODIFIES: this
-    // EFFECTS:
-    private void removeShow(int whichList) {
-        // STUB
+    // EFFECTS: displays and processes input to remove television show from desired list
+    private void removeShowSetup(int whichList) {
+        System.out.println("\nWhich show would you like to remove from this list?");
+        System.out.println("\nEnter the number in front of the show you would like to remove:");
+        System.out.println("---------------------------------------------");
+        selectWhichTelevisionList(whichList);
+        System.out.println("(0) to return to menu");
+        removeFromCorrectList(whichList);
+    }
+
+    // EFFECTS: selects which list to obtain shows from to display for menu options for removing a show
+    private void removeFromCorrectList(int whichList) {
+        if (whichList == 1) {
+            List<TelevisionShow> correctRemoveList = planToWatchList.getTelevisionShowList();
+            removeShow(correctRemoveList);
+        } else if (whichList == 2) {
+            List<TelevisionShow> correctRemoveList = currentlyWatchingList.getTelevisionShowList();
+            removeShow(correctRemoveList);
+        } else if (whichList == 3) {
+            List<TelevisionShow> correctRemoveList = completedList.getTelevisionShowList();
+            removeShow(correctRemoveList);
+        } else if (whichList == 4) {
+            List<TelevisionShow> correctRemoveList = favouriteShowsList.getTelevisionShowList();
+            removeShow(correctRemoveList);
+        }
     }
 
     // MODIFIES: this
-    // EFFECTS:
-    private void rateShow(int whichList) {
+    // EFFECTS: removes show from list via its index inputted
+    private void removeShow(List<TelevisionShow> correctRemoveList) {
+        String removeNumberInput = keyCommand();
+        if (Integer.parseInt(removeNumberInput) == 0) {
+            return;
+        } else if (Integer.parseInt(removeNumberInput) != 0) {
+            correctRemoveList.remove(Integer.parseInt(removeNumberInput) - 1);
+            System.out.println("The show has been removed");
+        }
+    }
 
+    // EFFECTS: displays and processes input to rate television show from desired list
+    private void rateShowSetup(int whichList) {
+        System.out.println("\nWhich show would you like to rate in this list?");
+        System.out.println("\nEnter the number in front of the show you would like to rate:");
+        System.out.println("---------------------------------------------");
+        selectWhichTelevisionList(whichList);
+        System.out.println("(0) to return to menu");
+        rateFromCorrectList(whichList);
+    }
+
+    // EFFECTS: selects which list to obtain shows from to display for menu options for rating a show
+    private void rateFromCorrectList(int whichList) {
+        if (whichList == 1) {
+            List<TelevisionShow> correctRateList = planToWatchList.getTelevisionShowList();
+            rateShow(correctRateList);
+        } else if (whichList == 2) {
+            List<TelevisionShow> correctRateList = currentlyWatchingList.getTelevisionShowList();
+            rateShow(correctRateList);
+        } else if (whichList == 3) {
+            List<TelevisionShow> correctRateList = completedList.getTelevisionShowList();
+            rateShow(correctRateList);
+        } else if (whichList == 4) {
+            List<TelevisionShow> correctRateList = favouriteShowsList.getTelevisionShowList();
+            rateShow(correctRateList);
+        }
+    }
+
+    // MODIFIES: TelevisionShow
+    // EFFECTS: rates show from list via its index inputted and rating number
+    private void rateShow(List<TelevisionShow> correctRateList) {
+        String showNumberInput = keyCommand();
+        if (Integer.parseInt(showNumberInput) == 0) {
+            return;
+        } else if (Integer.parseInt(showNumberInput) != 0) {
+            TelevisionShow obtainedShow = correctRateList.get(Integer.parseInt(showNumberInput) - 1);
+            System.out.println("Assign a rating between 1 to 10 (set 0 for n/a)");
+            String rateNumberInput = keyCommand();
+            if (Integer.parseInt(rateNumberInput) < 0 || Integer.parseInt(rateNumberInput) > 10) {
+                invalidKey();
+            } else {
+                obtainedShow.setRating(Integer.parseInt(rateNumberInput));
+                System.out.println("The show has been rated");
+            }
+        }
+    }
+
+    // EFFECTS: selects which list to obtain shows from to display for menu options
+    private void selectWhichTelevisionList(int whichList) {
+        if (whichList == 1) {
+            List<TelevisionShow> displayList = planToWatchList.getTelevisionShowList();
+            displayTelevisionListIndexMenu(displayList);
+        } else if (whichList == 2) {
+            List<TelevisionShow> displayList = currentlyWatchingList.getTelevisionShowList();
+            displayTelevisionListIndexMenu(displayList);
+        } else if (whichList == 3) {
+            List<TelevisionShow> displayList = completedList.getTelevisionShowList();
+            displayTelevisionListIndexMenu(displayList);
+        } else if (whichList == 4) {
+            List<TelevisionShow> displayList = favouriteShowsList.getTelevisionShowList();
+            displayTelevisionListIndexMenu(displayList);
+        }
+    }
+
+    // EFFECTS: displays the index and name of all shows in the television list for user to choose
+    private void displayTelevisionListIndexMenu(List<TelevisionShow> displayList) {
+        for (TelevisionShow show : displayList) {
+            System.out.println("(" + displayList.indexOf(show) + 1 + ") " + show.getTitle());
+        }
     }
 
     // EFFECTS: prints a message when an invalid key command is inputted
@@ -282,6 +374,7 @@ public class TelevisionTrackerApp {
         System.out.println("\nYou have not entered a valid option. Please try again.");
     }
 
+    // MODIFIES: this
     // EFFECTS: returns user input as a string upon pressing the enter key
     private String keyCommand() {
         return input.nextLine();
