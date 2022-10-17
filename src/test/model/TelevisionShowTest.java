@@ -19,7 +19,7 @@ public class TelevisionShowTest {
 
     @Test
     public void testConstructor() {
-        assertEquals("Andor", showTest1.getName());
+        assertEquals("Andor", showTest1.getTitle());
         assertEquals( 0, showTest1.getNumber());
         assertEquals(0, showTest1.getRating());
         assertEquals("", showTest1.getDateReleased());

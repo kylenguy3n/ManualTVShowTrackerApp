@@ -3,6 +3,8 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+// Represents a television season having a season number in its show, a season name, a rating if provided, and
+// the date the season's first episode released, if provided
 public class TelevisionSeason extends TelevisionComponent {
     private List<TelevisionEpisode> seasonEpisodes;
 

@@ -17,7 +17,7 @@ public class TelevisionEpisodeTest {
 
     @Test
     public void testConstructor() {
-        assertEquals("Kassa", episodeTest1.getName());
+        assertEquals("Kassa", episodeTest1.getTitle());
         assertEquals( 1, episodeTest1.getNumber());
         assertEquals(0, episodeTest1.getRating());
         assertEquals("", episodeTest1.getDateReleased());

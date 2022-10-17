@@ -1,18 +1,21 @@
 package model;
 
+// Represents an abstract television component (either a show, season, or episode) having a number to represent its
+// sequence order if applicable, the title of the component, a rating if provided, and the date the component part
+// released, if provided
 public abstract class TelevisionComponent {
     protected int number;
-    protected String name;
+    protected String title;
     protected int rating;
     protected String dateReleased;
 
     // REQUIRES: number >= 0
     // EFFECTS: constructs television component (a show, season, or episode class) with a number for which it appears
-    //          in its television superclass (0 for the top class of show), the name of the component, an initial unset
-    //          rating, and an unset date of release
-    protected TelevisionComponent(int number, String name) {
+    //          in its superclass component (0 for show), the name of the component, an initial unset rating, and an
+    //          unset date of release
+    protected TelevisionComponent(int number, String title) {
         this.number = number;
-        this.name = name;
+        this.title = title;
         this.rating = 0;
         this.dateReleased = "";
     }
@@ -48,8 +51,8 @@ public abstract class TelevisionComponent {
         return this.number;
     }
 
-    public String getName() {
-        return this.name;
+    public String getTitle() {
+        return this.title;
     }
 
     public int getRating() {

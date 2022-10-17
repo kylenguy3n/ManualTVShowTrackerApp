@@ -19,7 +19,7 @@ public class TelevisionSeasonTest {
 
     @Test
     public void testConstructor() {
-        assertEquals("Season 1", seasonTest1.getName());
+        assertEquals("Season 1", seasonTest1.getTitle());
         assertEquals( 1, seasonTest1.getNumber());
         assertEquals(0, seasonTest1.getRating());
         assertEquals("", seasonTest1.getDateReleased());

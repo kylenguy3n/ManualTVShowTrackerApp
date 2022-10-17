@@ -21,7 +21,7 @@ useful to me because if I ever want to remember which shows I have seen, and if 
 can simply refer back to the TV Show Tracker, especially if the amount of shows I've seen start accumulating, and I 
 start to forget some even existed.
 
-## User Stories
+## User Stories (Old and ToDo)
 - As a user, I want to be able to have a list of shows I want to watch and update the list with shows I have not seen 
 yet that interest me or that I will want to watch
 - As a user, I want to be able to have a list of shows I am currently watching, and be able to update which season and 
@@ -32,3 +32,10 @@ I choose to give them a rating, per season and for the whole show
 - As a user, I would like to be able to remove or update ratings of a show or a show's season
 - As a user, I would like to remove shows from any of the lists I've assigned them to
 - As a user, I would like to reassign shows from one list to another
+
+## User Stories (Realized)
+- As a user, I want to be able to add an arbitrary number of shows to one of these television lists: 'Plan to Watch',
+'Currently Watching', 'Completed', and 'Favourite Shows'.
+- As a user, I want to be able to remove an existing show from one of the television lists
+- As a user, I want to view the shows added to the television lists
+- As a user, I want to set a rating for a show in one of the television lists
