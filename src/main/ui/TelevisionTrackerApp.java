@@ -1,28 +1,34 @@
 package ui;
 
-import model.TelevisionEpisode;
-import model.TelevisionSeason;
-import model.TelevisionShow;
-import model.TelevisionShowList;
+import model.*;
+import persistence.FileReader;
+import persistence.FileWriter;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
 // Television tracker application
 public class TelevisionTrackerApp {
+    private static final String SAVED_FILE_DIR = "./data/savedTelevisionShowLists.json";
     private TelevisionShowList planToWatchList;
     private TelevisionShowList currentlyWatchingList;
     private TelevisionShowList completedList;
     private TelevisionShowList favouriteShowsList;
     private Scanner input;
+    private FileReader fileReader;
+    private FileWriter fileWriter;
 
     // EFFECTS: initializes television show lists and runs the television tracker application
-    public TelevisionTrackerApp() {
+    public TelevisionTrackerApp() throws FileNotFoundException {
         planToWatchList = new TelevisionShowList("Plan to Watch");
         currentlyWatchingList = new TelevisionShowList("Currently Watching");
         completedList = new TelevisionShowList("Completed");
         favouriteShowsList = new TelevisionShowList("Favourite Shows");
         input = new Scanner(System.in);
+        fileWriter = new FileWriter(SAVED_FILE_DIR);
+        fileReader = new FileReader(SAVED_FILE_DIR);
 
         runTelevisionApp();
     }
@@ -39,7 +45,7 @@ public class TelevisionTrackerApp {
             displayMainMenu();
             menuKeyCommand = input.nextLine();
 
-            if (menuKeyCommand.equals("5")) {
+            if (menuKeyCommand.equals("7")) {
                 keepRunning = false;
             } else {
                 processMenuKeyCommand(menuKeyCommand);
@@ -56,9 +62,12 @@ public class TelevisionTrackerApp {
         System.out.println("\t(2) Access 'Currently Watching' list");
         System.out.println("\t(3) Access 'Completed' list");
         System.out.println("\t(4) Access 'Favourite Shows' list");
-        System.out.println("\t(5) Quit");
+        System.out.println("\t(5) Save all lists to a file");
+        System.out.println("\t(6) Load all lists from an existing file");
+        System.out.println("\t(7) Quit");
     }
 
+    // MODIFIES: this
     // EFFECTS: processes user input at the main menu
     private void processMenuKeyCommand(String menuKeyCommand) {
         if (menuKeyCommand.equals("1")) {
@@ -69,6 +78,10 @@ public class TelevisionTrackerApp {
             accessCompleted();
         } else if (menuKeyCommand.equals("4")) {
             accessFavouriteShows();
+        } else if (menuKeyCommand.equals("5")) {
+            saveTelevisionShowLists();
+        } else if (menuKeyCommand.equals("6")) {
+            loadTelevisionShowLists();
         } else {
             invalidKey();
         }
@@ -98,6 +111,7 @@ public class TelevisionTrackerApp {
         processSubMenuKeyCommand(4);
     }
 
+    // MODIFIES: this
     // EFFECTS: displays and processes user input at the submenu
     private void processSubMenuKeyCommand(int whichList) {
         displaySubMenu();
@@ -115,10 +129,7 @@ public class TelevisionTrackerApp {
             case "4":
                 rateShowSetup(whichList);
                 break;
-//            case "5":
-//                // STUB // TODO
-//                break;
-            case "6":
+            case "5":
                 break;
             default:
                 invalidKey();
@@ -134,8 +145,7 @@ public class TelevisionTrackerApp {
         System.out.println("\t(2) Add new show to list");
         System.out.println("\t(3) Remove show from list");
         System.out.println("\t(4) Rate show from list");
-//        System.out.println("\t(5) Move or copy show to a different list"); // TODO
-        System.out.println("\t(6) Go back to main menu");
+        System.out.println("\t(5) Go back to main menu");
     }
 
     // EFFECTS: selects the desired television list to print the shows in its list
@@ -178,7 +188,7 @@ public class TelevisionTrackerApp {
         System.out.println("\n'" + show.getTitle() + "' has been added to the list.");
     }
 
-    // MODIFIES: TelevisionShow
+    // MODIFIES: show
     // EFFECTS: assigns number of seasons to add to the television show
     private void setupShowSeasons(TelevisionShow show) {
         System.out.println("\nHow many seasons are in this show?");
@@ -196,7 +206,7 @@ public class TelevisionTrackerApp {
         }
     }
 
-    // MODIFIES: TelevisionSeason
+    // MODIFIES: season
     // EFFECTS: assigns number of episodes to add to the television season
     private void setupSeasonEpisodes(TelevisionSeason season, int i) {
         System.out.println("\nHow many episodes are in season " + Integer.toString(i) + "?");
@@ -334,13 +344,13 @@ public class TelevisionTrackerApp {
             return;
         } else if (Integer.parseInt(showNumberInput) != 0) {
             TelevisionShow obtainedShow = correctRateList.get(Integer.parseInt(showNumberInput) - 1);
-            System.out.println("Assign a rating between 1 to 10 (set 0 for n/a)");
+            System.out.println("\nAssign a rating between 1 to 10 (set 0 for n/a)");
             String rateNumberInput = keyCommand();
             if (Integer.parseInt(rateNumberInput) < 0 || Integer.parseInt(rateNumberInput) > 10) {
                 invalidKey();
             } else {
                 obtainedShow.setRating(Integer.parseInt(rateNumberInput));
-                System.out.println("The show has been rated");
+                System.out.println("\nThe show has been rated");
             }
         }
     }
@@ -365,7 +375,7 @@ public class TelevisionTrackerApp {
     // EFFECTS: displays the index and name of all shows in the television list for user to choose
     private void displayTelevisionListIndexMenu(List<TelevisionShow> displayList) {
         for (TelevisionShow show : displayList) {
-            System.out.println("(" + displayList.indexOf(show) + 1 + ") " + show.getTitle());
+            System.out.println("(" + (displayList.indexOf(show) + 1) + ") " + show.getTitle());
         }
     }
 
@@ -380,4 +390,41 @@ public class TelevisionTrackerApp {
         return input.nextLine();
     }
 
+    // EFFECTS: saves the television show lists to file
+    private void saveTelevisionShowLists() {
+        try {
+            ListOfTelevisionShowLists saveListOfLists = new ListOfTelevisionShowLists();
+            saveListOfLists.addTelevisionShowListToList(planToWatchList);
+            saveListOfLists.addTelevisionShowListToList(currentlyWatchingList);
+            saveListOfLists.addTelevisionShowListToList(completedList);
+            saveListOfLists.addTelevisionShowListToList(favouriteShowsList);
+            fileWriter.openFile();
+            fileWriter.writeFile(saveListOfLists);
+            fileWriter.closeFile();
+            System.out.println("Saved " + planToWatchList.getListName() + " to " + SAVED_FILE_DIR);
+            System.out.println("Saved " + currentlyWatchingList.getListName() + " to " + SAVED_FILE_DIR);
+            System.out.println("Saved " + completedList.getListName() + " to " + SAVED_FILE_DIR);
+            System.out.println("Saved " + favouriteShowsList.getListName() + " to " + SAVED_FILE_DIR);
+        } catch (FileNotFoundException e) {
+            System.out.println("Error: Unable to save data to file: " + SAVED_FILE_DIR);
+        }
+    }
+
+    // MODIFIES: this
+    // EFFECTS: loads the television show lists from saved file
+    private void loadTelevisionShowLists() {
+        try {
+            ListOfTelevisionShowLists loadListOfLists = fileReader.readFile();
+            planToWatchList = loadListOfLists.getListOfTelevisionShowLists().get(0);
+            currentlyWatchingList = loadListOfLists.getListOfTelevisionShowLists().get(1);
+            completedList = loadListOfLists.getListOfTelevisionShowLists().get(2);
+            favouriteShowsList = loadListOfLists.getListOfTelevisionShowLists().get(3);
+            System.out.println("Loaded " + planToWatchList.getListName() + " from " + SAVED_FILE_DIR);
+            System.out.println("Loaded " + currentlyWatchingList.getListName() + " from " + SAVED_FILE_DIR);
+            System.out.println("Loaded " + completedList.getListName() + " from " + SAVED_FILE_DIR);
+            System.out.println("Loaded " + favouriteShowsList.getListName() + " from " + SAVED_FILE_DIR);
+        } catch (IOException e) {
+            System.out.println("Unable to load data from file: " + SAVED_FILE_DIR);
+        }
+    }
 }

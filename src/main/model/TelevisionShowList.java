@@ -1,9 +1,14 @@
 package model;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+import persistence.Writable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class TelevisionShowList {
+// Represents a list of television shows, having a name for the list and a list that includes television shows
+public class TelevisionShowList implements Writable {
     private List<TelevisionShow> televisionShowList;
     private String listName;
 
@@ -44,6 +49,25 @@ public class TelevisionShowList {
 
     public List<TelevisionShow> getTelevisionShowList() {
         return this.televisionShowList;
+    }
+
+    @Override
+    // EFFECTS: returns television show list as a JSON object
+    public JSONObject objectToJson() {
+        JSONObject jsonTelevisionShowList = new JSONObject();
+        jsonTelevisionShowList.put("List Name", this.listName);
+        jsonTelevisionShowList.put("Television Shows", listOfObjectToJson());
+        return jsonTelevisionShowList;
+    }
+
+    // EFFECTS: returns television shows in the television show list as a JSON array
+    public JSONArray listOfObjectToJson() {
+        JSONArray jsonTelevisionShows = new JSONArray();
+
+        for (TelevisionShow televisionShow : televisionShowList) {
+            jsonTelevisionShows.put(televisionShow.objectToJson());
+        }
+        return jsonTelevisionShows;
     }
 
 }
