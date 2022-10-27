@@ -1,8 +1,5 @@
 package model;
 
-import org.json.JSONObject;
-import persistence.Writable;
-
 // Represents an abstract television component (either a show, season, or episode) having a number to represent its
 // sequence order if applicable, the title of the component, a rating if provided, and the date the component part
 // released, if provided

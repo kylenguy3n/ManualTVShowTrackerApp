@@ -1,9 +1,7 @@
 package model;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 import persistence.Writable;
-import persistence.WritableArray;
 
 // Represents a television episode having an episode number in its season, an episode name, a rating if provided, and
 // the date the episode released, if provided

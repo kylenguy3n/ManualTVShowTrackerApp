@@ -38,10 +38,8 @@ public class FileReader {
         return contentBuilder.toString();
     }
 
-    // MODIFIES: listOfTelevisionShowLists
     // EFFECTS: parses list of television show lists from
     private ListOfTelevisionShowLists parseListOfTelevisionShowLists(JSONObject jsonObject) {
-//        String name = jsonObject.getString("Name");
         ListOfTelevisionShowLists listOfTelevisionShowLists = new ListOfTelevisionShowLists();
         addTelevisionShowLists(listOfTelevisionShowLists, jsonObject);
         return listOfTelevisionShowLists;

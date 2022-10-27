@@ -71,5 +71,4 @@ public class TelevisionShowList implements Writable, WritableArray {
         }
         return jsonTelevisionShows;
     }
-
 }

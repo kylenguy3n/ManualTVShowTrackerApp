@@ -305,7 +305,7 @@ public class TelevisionTrackerApp {
             return;
         } else if (Integer.parseInt(removeNumberInput) != 0) {
             correctRemoveList.remove(Integer.parseInt(removeNumberInput) - 1);
-            System.out.println("The show has been removed");
+            System.out.println("\nThe show has been removed");
         }
     }
 
@@ -406,7 +406,7 @@ public class TelevisionTrackerApp {
             System.out.println("Saved " + completedList.getListName() + " to " + SAVED_FILE_DIR);
             System.out.println("Saved " + favouriteShowsList.getListName() + " to " + SAVED_FILE_DIR);
         } catch (FileNotFoundException e) {
-            System.out.println("Error: Unable to save data to file: " + SAVED_FILE_DIR);
+            System.out.println("\nError: Unable to save data to file: " + SAVED_FILE_DIR);
         }
     }
 
@@ -424,7 +424,7 @@ public class TelevisionTrackerApp {
             System.out.println("Loaded " + completedList.getListName() + " from " + SAVED_FILE_DIR);
             System.out.println("Loaded " + favouriteShowsList.getListName() + " from " + SAVED_FILE_DIR);
         } catch (IOException e) {
-            System.out.println("Unable to load data from file: " + SAVED_FILE_DIR);
+            System.out.println("\nUnable to load data from file: " + SAVED_FILE_DIR);
         }
     }
 }

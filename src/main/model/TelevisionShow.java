@@ -43,7 +43,6 @@ public class TelevisionShow extends TelevisionComponent implements Writable, Wri
         return this.description;
     }
 
-
     @Override
     // EFFECTS: returns television show as a JSON object
     public JSONObject objectToJson() {

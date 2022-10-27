@@ -7,7 +7,7 @@ public class Main {
         try {
             TelevisionTrackerApp televisionApp = new TelevisionTrackerApp();
         } catch (FileNotFoundException e) {
-            System.out.println("Unable to run Television Tracker App: file not found");
+            System.out.println("\nUnable to run Television Tracker App: file not found");
         }
     }
 }
