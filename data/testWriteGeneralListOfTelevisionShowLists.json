@@ -1,0 +1,25 @@
+{
+    "Contained Lists": [{
+        "Television Shows": [{
+            "Show Number": 0,
+            "Show Rating": 10,
+            "Show Date Released": "",
+            "Show Seasons": [{
+                "Season Date Released": "",
+                "Season Episodes": [{
+                    "Episode Date Released": "",
+                    "Episode Number": 1,
+                    "Episode Rating": 0,
+                    "Episode Name": "Episode 1"
+                }],
+                "Season Rating": 0,
+                "Season Name": "Season 1",
+                "Season Number": 1
+            }],
+            "Show Name": "Test Show",
+            "Show Description": "X"
+        }],
+        "List Name": "Test Show List"
+    }],
+    "Name": "List of Television Show Lists"
+}
