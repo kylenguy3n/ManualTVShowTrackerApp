@@ -3,13 +3,14 @@ package model;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import persistence.Writable;
+import persistence.WritableArray;
 
 import java.util.ArrayList;
 import java.util.List;
 
 // Represents a television show having the name of the show, a rating if provided, the date the show first aired, if
 // provided, and the description of the show, if provided
-public class TelevisionShow extends TelevisionComponent implements Writable {
+public class TelevisionShow extends TelevisionComponent implements Writable, WritableArray {
     private List<TelevisionSeason> showSeasons;
     private String description;
 

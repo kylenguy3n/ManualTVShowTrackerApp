@@ -3,13 +3,14 @@ package model;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import persistence.Writable;
+import persistence.WritableArray;
 
 import java.util.ArrayList;
 import java.util.List;
 
 // Represents a list of television show lists, having a name for the list of lists, and a list that includes lists
 // which hold television shows
-public class ListOfTelevisionShowLists implements Writable {
+public class ListOfTelevisionShowLists implements Writable, WritableArray {
     private String listOfListsName;
     private List<TelevisionShowList> listOfTelevisionShowLists;
 

@@ -3,13 +3,14 @@ package model;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import persistence.Writable;
+import persistence.WritableArray;
 
 import java.util.ArrayList;
 import java.util.List;
 
 // Represents a television season having a season number in its show, a season name, a rating if provided, and
 // the date the season's first episode released, if provided
-public class TelevisionSeason extends TelevisionComponent implements Writable {
+public class TelevisionSeason extends TelevisionComponent implements Writable, WritableArray {
     private List<TelevisionEpisode> seasonEpisodes;
 
     // REQUIRES: seasonNumber >= 1

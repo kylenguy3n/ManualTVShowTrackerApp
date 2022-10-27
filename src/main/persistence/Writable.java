@@ -9,6 +9,5 @@ public interface Writable {
     // EFFECTS: returns this object as JSON object
     JSONObject objectToJson();
 
-    // EFFECTS: returns objects in list as a JSON array
-    JSONArray listOfObjectToJson();
+
 }

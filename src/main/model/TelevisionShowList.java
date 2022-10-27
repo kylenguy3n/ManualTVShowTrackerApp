@@ -3,12 +3,13 @@ package model;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import persistence.Writable;
+import persistence.WritableArray;
 
 import java.util.ArrayList;
 import java.util.List;
 
 // Represents a list of television shows, having a name for the list and a list that includes television shows
-public class TelevisionShowList implements Writable {
+public class TelevisionShowList implements Writable, WritableArray {
     private List<TelevisionShow> televisionShowList;
     private String listName;
 
@@ -60,6 +61,7 @@ public class TelevisionShowList implements Writable {
         return jsonTelevisionShowList;
     }
 
+    @Override
     // EFFECTS: returns television shows in the television show list as a JSON array
     public JSONArray listOfObjectToJson() {
         JSONArray jsonTelevisionShows = new JSONArray();
