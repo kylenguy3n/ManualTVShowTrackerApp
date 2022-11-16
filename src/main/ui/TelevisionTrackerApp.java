@@ -398,9 +398,11 @@ public class TelevisionTrackerApp {
             saveListOfLists.addTelevisionShowListToList(currentlyWatchingList);
             saveListOfLists.addTelevisionShowListToList(completedList);
             saveListOfLists.addTelevisionShowListToList(favouriteShowsList);
+
             fileWriter.openFile();
             fileWriter.writeFile(saveListOfLists);
             fileWriter.closeFile();
+
             System.out.println("Saved " + planToWatchList.getListName() + " to " + SAVED_FILE_DIR);
             System.out.println("Saved " + currentlyWatchingList.getListName() + " to " + SAVED_FILE_DIR);
             System.out.println("Saved " + completedList.getListName() + " to " + SAVED_FILE_DIR);

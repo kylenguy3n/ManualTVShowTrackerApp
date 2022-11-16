@@ -1,25 +1,143 @@
 {
-    "Contained Lists": [{
-          "Television Shows": [{
-              "Show Number": 0,
-              "Show Rating": 10,
-              "Show Date Released": "",
-              "Show Seasons": [{
-                  "Season Date Released": "",
-                  "Season Episodes": [{
-                      "Episode Date Released": "",
-                      "Episode Number": 1,
-                      "Episode Rating": 0,
-                      "Episode Name": "Episode 1"
-                  }],
-                  "Season Rating": 0,
-                  "Season Name": "Season 1",
-                  "Season Number": 1
-              }],
-              "Show Name": "Test Show",
-              "Show Description": "X"
-          }],
-          "List Name": "Test Show List"
-      }],
+    "Contained Lists": [
+        {
+            "Television Shows": [{
+                "Show Number": 0,
+                "Show Rating": 0,
+                "Show Date Released": "",
+                "Show Seasons": [
+                    {
+                        "Season Date Released": "",
+                        "Season Episodes": [
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 1,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 1"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 2,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 2"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 3,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 3"
+                            }
+                        ],
+                        "Season Rating": 0,
+                        "Season Name": "Season 1",
+                        "Season Number": 1
+                    },
+                    {
+                        "Season Date Released": "",
+                        "Season Episodes": [
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 1,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 1"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 2,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 2"
+                            }
+                        ],
+                        "Season Rating": 0,
+                        "Season Name": "Season 2",
+                        "Season Number": 2
+                    },
+                    {
+                        "Season Date Released": "",
+                        "Season Episodes": [{
+                            "Episode Date Released": "",
+                            "Episode Number": 1,
+                            "Episode Rating": 0,
+                            "Episode Name": "Episode 1"
+                        }],
+                        "Season Rating": 0,
+                        "Season Name": "Season 3",
+                        "Season Number": 3
+                    },
+                    {
+                        "Season Date Released": "",
+                        "Season Episodes": [
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 1,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 1"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 2,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 2"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 3,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 3"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 4,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 4"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 5,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 5"
+                            }
+                        ],
+                        "Season Rating": 0,
+                        "Season Name": "Season 4",
+                        "Season Number": 4
+                    }
+                ],
+                "Show Name": "Andor",
+                "Show Description": "Hello"
+            }],
+            "List Name": "Plan to Watch"
+        },
+        {
+            "Television Shows": [],
+            "List Name": "Currently Watching"
+        },
+        {
+            "Television Shows": [],
+            "List Name": "Completed"
+        },
+        {
+            "Television Shows": [{
+                "Show Number": 0,
+                "Show Rating": 0,
+                "Show Date Released": "",
+                "Show Seasons": [{
+                    "Season Date Released": "",
+                    "Season Episodes": [{
+                        "Episode Date Released": "",
+                        "Episode Number": 1,
+                        "Episode Rating": 0,
+                        "Episode Name": "Episode 1"
+                    }],
+                    "Season Rating": 0,
+                    "Season Name": "Season 1",
+                    "Season Number": 1
+                }],
+                "Show Name": "Hello",
+                "Show Description": ""
+            }],
+            "List Name": "Favourite Shows"
+        }
+    ],
     "Name": "List of Television Show Lists"
 }

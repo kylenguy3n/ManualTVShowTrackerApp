@@ -1,7 +1,6 @@
 package persistence;
 
 import model.ListOfTelevisionShowLists;
-import model.TelevisionShowList;
 import org.json.JSONObject;
 
 import java.io.File;
