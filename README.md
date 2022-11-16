@@ -31,10 +31,11 @@ start to forget some even existed.
 - As a user, I would like to have an option to load previously saved changes the next time I run my TV application
 
 ## Instructions for Grader:
-- Add a show to one of the television lists by clicking on a button labelled "Add a show" in the submenu of one of the 
+- Add a show to one of the television lists by clicking on a button labelled "Add a show" within the tab of one of the 
 lists
-- Remove an existing show from the television lists by clicking on a button labelled "Remove a show" in the submenu of
+- Remove an existing show from the television lists by clicking on a button labelled "Remove a show" within the tab of
 one of the lists, and then choosing which show to remove within the list
 - Save the changes made to each of the TV lists by clicking on a button labelled "Save data" in the main menu
 - Load the previously saved changes from the last saved state by clicking on a button labelled "Load data" in the main
 menu
+- Locate the visual component, the TV Tracker logo, on the main menu of the GUI

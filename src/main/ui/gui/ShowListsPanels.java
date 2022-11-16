@@ -2,6 +2,6 @@ package ui.gui;
 
 import javax.swing.*;
 
-public class ShowListsPanels extends JPanel {
+public abstract class ShowListsPanels extends JPanel {
 
 }

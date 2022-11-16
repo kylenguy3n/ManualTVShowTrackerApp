@@ -34,7 +34,7 @@ public class FileManager {
 
     // MODIFIES: this
     // EFFECTS: File writer saves the listOfTelevisionShowLists to the saved file location
-    private void saveFile() throws FileNotFoundException {
+    public void saveFile() throws FileNotFoundException {
         fileWriter.openFile();
         fileWriter.writeFile(this.listOfTelevisionShowLists);
         fileWriter.closeFile();
@@ -42,7 +42,7 @@ public class FileManager {
 
     // MODIFIES: this
     // EFFECTS: File reader reads data off saved file and overwrites listOfTelevisionShowLists with the read list
-    private void loadFile() throws IOException {
+    public void loadFile() throws IOException {
         this.listOfTelevisionShowLists = fileReader.readFile();
     }
 }
