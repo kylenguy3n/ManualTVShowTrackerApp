@@ -129,7 +129,7 @@ public class GUI {
     }
 
     // MODIFIES: this
-    // EFFECTS:
+    // EFFECTS: refreshes the tabbed pane by removing and adding updated tab panels
     private void tabbedPaneRefresh() {
         setUpTVListPanels();
         tabbedPane.removeTabAt(4);
