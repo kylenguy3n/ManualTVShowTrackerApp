@@ -236,7 +236,7 @@ public class TelevisionTrackerApp {
             case 3:
                 this.completedList.addShowToList(show);
                 break;
-            case 4:
+            default:
                 this.favouriteShowsList.addShowToList(show);
                 break;
         }

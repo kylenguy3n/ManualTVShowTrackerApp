@@ -1,19 +1,58 @@
 {
     "Contained Lists": [
         {
-            "Television Shows": [],
+            "Television Shows": [{
+                "Show Number": 0,
+                "Show Rating": 0,
+                "Show Date Released": "",
+                "Show Seasons": [{
+                    "Season Date Released": "",
+                    "Season Episodes": [{
+                        "Episode Date Released": "",
+                        "Episode Number": 1,
+                        "Episode Rating": 0,
+                        "Episode Name": "Episode 1"
+                    }],
+                    "Season Rating": 0,
+                    "Season Name": "Season 1",
+                    "Season Number": 1
+                }],
+                "Show Name": "Hello",
+                "Show Description": ""
+            }],
             "List Name": "Plan to Watch"
         },
         {
-            "Television Shows": [],
+            "Television Shows": [{
+                "Show Number": 0,
+                "Show Rating": 0,
+                "Show Date Released": "",
+                "Show Seasons": [],
+                "Show Name": "Loser",
+                "Show Description": ""
+            }],
             "List Name": "Currently Watching"
         },
         {
-            "Television Shows": [],
+            "Television Shows": [{
+                "Show Number": 0,
+                "Show Rating": 0,
+                "Show Date Released": "",
+                "Show Seasons": [],
+                "Show Name": "Ohio",
+                "Show Description": ""
+            }],
             "List Name": "Completed"
         },
         {
-            "Television Shows": [],
+            "Television Shows": [{
+                "Show Number": 0,
+                "Show Rating": 0,
+                "Show Date Released": "",
+                "Show Seasons": [],
+                "Show Name": "Noob",
+                "Show Description": ""
+            }],
             "List Name": "Favourite Shows"
         }
     ],

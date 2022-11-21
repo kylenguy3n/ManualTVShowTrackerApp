@@ -35,7 +35,8 @@ start to forget some even existed.
 lists
 - Remove an existing show from the television lists by clicking on a button labelled "Remove a show" within the tab of
 one of the lists, and then choosing which show to remove within the list
-- Save the changes made to each of the TV lists by clicking on a button labelled "Save data" in the main menu
-- Load the previously saved changes from the last saved state by clicking on a button labelled "Load data" in the main
-menu
+- Save the changes made to each of the TV lists by clicking on a button labelled "Save Current Data" in the main menu
+- Load the previously saved changes from the last saved state by clicking on a button labelled "Load Last Saved Data" 
+in the main menu
+- Clear any current data in the TV lists by clicking on a button labelled "Clear Current Data" in the main menu
 - Locate the visual component, the TV Tracker logo, on the main menu of the GUI

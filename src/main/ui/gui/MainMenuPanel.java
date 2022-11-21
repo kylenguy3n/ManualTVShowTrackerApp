@@ -18,14 +18,14 @@ public class MainMenuPanel extends JPanel {
     public MainMenuPanel(GUI gui) {
         setBorder(BorderFactory.createTitledBorder("Main Menu"));
         setLayout(new GridBagLayout());
+        gridConstraints = new GridBagConstraints();
 
-        saveButton = new JButton("Save Data");
+        saveButton = new JButton("Save Current Data");
         loadButton = new JButton("Load Last Saved Data");
         clearButton = new JButton("Clear Current Data");
         ImageIcon image = new ImageIcon("data/images/MainMenu.png");
         imageLabel = new JLabel(image);
         guidanceLabel = new JLabel("Please select one of the following TV show lists on the left to view it.");
-        gridConstraints = new GridBagConstraints();
 
         addImageLabel();
         addGuidanceLabel();
@@ -54,9 +54,10 @@ public class MainMenuPanel extends JPanel {
     // MODIFIES: this
     // EFFECTS: Adds the save button as a component to the main menu panel and adds a sava data action when pressed
     private void addSaveButton(GUI gui) {
-        gridConstraints.insets = new Insets(20, 5, 0, 5);
+        gridConstraints.insets = new Insets(10, 5, 0, 5);
+        gridConstraints.fill = GridBagConstraints.HORIZONTAL;
         gridConstraints.gridy = 2;
-        gridConstraints.gridx = 0;
+        gridConstraints.gridx = 1;
         add(saveButton, gridConstraints);
 
         saveButton.addActionListener(new ActionListener() {
@@ -70,8 +71,9 @@ public class MainMenuPanel extends JPanel {
     // MODIFIES: this
     // EFFECTS: Adds the load button as a component to the main menu panel and adds a load data action when pressed
     private void addLoadButton(GUI gui) {
-        gridConstraints.insets = new Insets(20, 5, 0, 5);
-        gridConstraints.gridy = 2;
+        gridConstraints.insets = new Insets(10, 5, 0, 5);
+        gridConstraints.fill = GridBagConstraints.HORIZONTAL;
+        gridConstraints.gridy = 3;
         gridConstraints.gridx = 1;
         add(loadButton, gridConstraints);
 
@@ -87,22 +89,16 @@ public class MainMenuPanel extends JPanel {
     // EFFECTS: Adds the clear button as a component to the main menu panel and adds a clear data action when pressed
     //          with appropriate warnings to confirm clearing the data
     private void addClearButton(GUI gui) {
-        gridConstraints.insets = new Insets(20, 5, 0, 5);
-        gridConstraints.gridy = 2;
-        gridConstraints.gridx = 2;
+        gridConstraints.insets = new Insets(10, 5, 0, 5);
+        gridConstraints.fill = GridBagConstraints.HORIZONTAL;
+        gridConstraints.gridy = 4;
+        gridConstraints.gridx = 1;
         add(clearButton, gridConstraints);
 
         clearButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int input = JOptionPane.showConfirmDialog(null,
-                        "Are you sure you would like to clear the data?", "Warning!",
-                        JOptionPane.YES_NO_OPTION);
-                if (input == 0) {
-                    gui.setUpListOfTVShowLists();
-                    JOptionPane.showMessageDialog(null, "TV list data has been successfully cleared.",
-                            "Clear Successful", JOptionPane.INFORMATION_MESSAGE);
-                }
+                gui.clearData();
             }
         });
     }
