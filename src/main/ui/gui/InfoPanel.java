@@ -8,7 +8,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// InfoPanel
+// Info panel is a JPanel that displays the details of a selected show on the TV show list JList
 public class InfoPanel extends JPanel implements ActionListener {
     private JLabel titleLabel;
     private JLabel seasonLabel;
@@ -26,7 +26,8 @@ public class InfoPanel extends JPanel implements ActionListener {
     private JButton editButton;
 
 
-    // EFFECTS: initializes the information panel of a TV show
+    // EFFECTS: initializes the information panel of a TV show to portray the show's title, number of seasons, number
+    //          of episodes, date released, description, and rating, as well as an edit button
     public InfoPanel() {
         setBorder(BorderFactory.createTitledBorder("Show Details"));
         setLayout(new GridBagLayout());
@@ -42,7 +43,7 @@ public class InfoPanel extends JPanel implements ActionListener {
     }
 
     // MODIFIES: this
-    // EFFECTS:
+    // EFFECTS: resets and updates JPanel with the show's fields and includes an edit button to edit the show's details
     public void displayShowInfo(TelevisionShow show) {
         this.removeAll();
         this.revalidate();
@@ -56,7 +57,7 @@ public class InfoPanel extends JPanel implements ActionListener {
     }
 
     // MODIFIES: this
-    // EFFECTS: adds labels for the fields of the TV show
+    // EFFECTS: adds labels for the fields of the TV show to the JPanel
     private void addLabels() {
         gridConstraints.anchor = GridBagConstraints.LINE_END;
         gridConstraints.gridx = 0;
@@ -74,7 +75,8 @@ public class InfoPanel extends JPanel implements ActionListener {
         add(ratingLabel, gridConstraints);
     }
 
-    // EFFECTS:
+    // MODIFIES: this
+    // EFFECTS: sets the actual field contents of each corresponding fields of the TV show
     private void setUpFields(TelevisionShow show) {
         titleField = new JTextField(show.getTitle(),  15);
         seasonField = new JTextField(Integer.toString(show.getShowSeasons().size()), 10);
@@ -100,7 +102,7 @@ public class InfoPanel extends JPanel implements ActionListener {
         ratingField.setBorder(null);
     }
 
-    // EFFECTS:
+    // EFFECTS: returns the amount of episodes in the TV show
     private int countEpisodes(TelevisionShow show) {
         int episodeAmount = 0;
         for (TelevisionSeason season : show.getShowSeasons()) {
@@ -109,7 +111,8 @@ public class InfoPanel extends JPanel implements ActionListener {
         return episodeAmount;
     }
 
-    // EFFECTS:
+    // MODIFIES: this
+    // EFFECTS: adds the actual field contents of each corresponding fields of the TV show to the JPanel
     private void addFields() {
         gridConstraints.anchor = GridBagConstraints.LINE_START;
         gridConstraints.gridx = 1;
@@ -127,6 +130,8 @@ public class InfoPanel extends JPanel implements ActionListener {
         add(ratingField, gridConstraints);
     }
 
+    // MODIFIES: this
+    // EFFECTS: adds the edit button to the JPanel
     private void addEditButton() {
         editButton.setMinimumSize(new Dimension(150, 20));
         gridConstraints.anchor = GridBagConstraints.WEST;
@@ -137,7 +142,7 @@ public class InfoPanel extends JPanel implements ActionListener {
     }
 
     // MODIFIES: this
-    // EFFECTS:
+    // EFFECTS: Opens up a window to edit the field contents of the show's corresponding fields
     @Override
     public void actionPerformed(ActionEvent e) {
         // STUB

@@ -9,6 +9,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+// Abstract class of JPanel for each show list to display the list's shows and selected show's details;
+// contains option to add or remove shows to list, refresh the list, and edit details of selected show
 public abstract class ShowListsPanels extends JPanel {
     protected ListPanel listPanel;
     protected InfoPanel infoPanel;
@@ -18,7 +20,9 @@ public abstract class ShowListsPanels extends JPanel {
     protected GridBagConstraints gridConstraints;
     protected TelevisionShowList showList;
 
-    // EFFECTS: Initializes the show list panel with a title
+    // EFFECTS: Initializes the show list panel with a title of the list, a JList with all the shows in that list,
+    //          a JPanel with the details of selected shows in the list, and buttons to add or remove shows, and
+    //          to edit a selected show and refresh the list
     public ShowListsPanels(GUI gui, int whichList) {
 
         setShowListBorder(whichList);
@@ -100,7 +104,7 @@ public abstract class ShowListsPanels extends JPanel {
 
 
     // MODIFIES: this
-    // EFFECTS:
+    // EFFECTS: adds the add show button to the panel, allowing user to add a new show's title to the list
     private void addAddShowButton() {
         gridConstraints.insets = new Insets(30, 5, 0, 5);
         gridConstraints.gridy = 1;
@@ -119,7 +123,7 @@ public abstract class ShowListsPanels extends JPanel {
     }
 
     // MODIFIES: this
-    // EFFECTS:
+    // EFFECTS: adds the remove show button to the panel, allowing user to remove a selected show from the list
     private void addRemoveShowButton() {
         gridConstraints.insets = new Insets(5, 5, 0, 5);
         gridConstraints.gridy = 2;
@@ -144,7 +148,7 @@ public abstract class ShowListsPanels extends JPanel {
     }
 
     // MODIFIES: this
-    // EFFECTS:
+    // EFFECTS: adds the refresh button to the panel, allowing user to refresh and get most updated details of list
     private void addRefreshListButton() {
         gridConstraints.insets = new Insets(5, 5, 0, 5);
         gridConstraints.gridy = 3;

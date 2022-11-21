@@ -8,21 +8,21 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 
-// ListPanel
+// Creates a JList panel to list shows of a TV show list
 public class ListPanel extends JPanel implements ListSelectionListener {
     private DefaultListModel<String> listModel;
     private JList<TelevisionShow> showJList;
     private TelevisionShowList showList;
     private InfoPanel infoPanel;
 
-    // EFFECTS:
+    // EFFECTS: initializes the JPanel to portray the JList of shows in a TV show list
     public ListPanel(TelevisionShowList showList, InfoPanel infoPanel) {
         this.infoPanel = infoPanel;
         refreshList(showList);
     }
 
     // MODIFIES: this
-    // EFFECTS:
+    // EFFECTS: Resets and initializes the JPanel's JList to contain the updated list of shows in the TV show list
     public void refreshList(TelevisionShowList showList) {
         this.removeAll();
         this.revalidate();
@@ -47,7 +47,8 @@ public class ListPanel extends JPanel implements ListSelectionListener {
         showJList.addListSelectionListener(this);
     }
 
-    // EFFECTS:
+    // MODIFIES: this, infoPanel
+    // EFFECTS: Selected show in the JList will show the details of that show in the infoPanel
     @Override
     public void valueChanged(ListSelectionEvent e) {
         int selectedShow = showJList.getSelectedIndex();
