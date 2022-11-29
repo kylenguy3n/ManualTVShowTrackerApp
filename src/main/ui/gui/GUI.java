@@ -8,7 +8,6 @@ import ui.FileManager;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.WindowAdapter;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 

@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 
 // Class and methods are in reference to those used in the JsonWriter class in:
 // https://github.students.cs.ubc.ca/CPSC210/JsonSerializationDemo
+//
 // Represents a writer that writes list of television show lists as JSON data to store in a destination file
 public class FileWriter {
     private static final int INDENT_FACTOR = 4;

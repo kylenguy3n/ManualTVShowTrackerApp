@@ -12,12 +12,15 @@ public class TelevisionShowListTest {
     private TelevisionShowList listTest1;
     private TelevisionShowList listTest2;
     private TelevisionShow showTest1;
+    EventLog eventLog;
 
     @BeforeEach
     public void runBefore() {
         listTest1 = new TelevisionShowList("Favourite Shows");
         listTest2 = new TelevisionShowList("Plan To Watch");
         showTest1 = new TelevisionShow("Andor");
+        eventLog = EventLog.getInstance();
+        eventLog.clear();
     }
 
     @Test
@@ -29,7 +32,6 @@ public class TelevisionShowListTest {
 
     @Test
     public void testAddShowSuccess() {
-        EventLog eventLog = EventLog.getInstance();
         TelevisionShow showTest2 = new TelevisionShow("Better Call Saul");
         boolean addSuccess1 = listTest1.addShowToList(showTest1);
         boolean addSuccess2 = listTest1.addShowToList(showTest2);
@@ -46,8 +48,9 @@ public class TelevisionShowListTest {
             strings.add(nextEvent.getDescription());
         }
 
-        assertEquals("Added Andor to Favourite Shows", strings.get(0));
-        assertEquals("Added Better Call Saul to Favourite Shows", strings.get(1));
+        assertEquals("Event log cleared.", strings.get(0));
+        assertEquals("Added Andor to Favourite Shows", strings.get(1));
+        assertEquals("Added Better Call Saul to Favourite Shows", strings.get(2));
     }
 
     @Test
@@ -61,7 +64,6 @@ public class TelevisionShowListTest {
 
     @Test
     public void testRemoveShowSuccess() {
-        EventLog eventLog = EventLog.getInstance();
         listTest2.addShowToList(showTest1);
         boolean removeSuccess = listTest2.removeShowFromList(showTest1);
         assertTrue(removeSuccess);
@@ -74,8 +76,9 @@ public class TelevisionShowListTest {
             strings.add(nextEvent.getDescription());
         }
 
-        assertEquals("Added Andor to Plan To Watch", strings.get(0));
-        assertEquals("Removed Andor from Plan To Watch", strings.get(1));
+        assertEquals("Event log cleared.", strings.get(0));
+        assertEquals("Added Andor to Plan To Watch", strings.get(1));
+        assertEquals("Removed Andor from Plan To Watch", strings.get(2));
     }
 
     @Test

@@ -51,7 +51,7 @@ public class TelevisionTrackerApp {
                 processMenuKeyCommand(menuKeyCommand);
             }
         }
-        System.out.println("\nYou have exited the application.");
+        System.out.println("\nYou have exited the application.\n");
     }
 
     // EFFECTS: displays main menu options for user to choose

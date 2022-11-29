@@ -80,3 +80,9 @@ Removed Test Show 4 from Completed
 
 Tue Nov 29 01:35:50 PST 2022\
 Removed Test Show 2 from Currently Watching
+
+## Phase 4: Task 3
+Given more time on the project, I would:
+
+- Implement the edit button for editing the details of shows in the GUI 
+- Refactor 

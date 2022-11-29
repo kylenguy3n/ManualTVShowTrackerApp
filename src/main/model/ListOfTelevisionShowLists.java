@@ -38,6 +38,7 @@ public class ListOfTelevisionShowLists implements Writable, WritableArray {
     }
 
     @Override
+    // EFFECTS: returns list of television list as a JSON object
     public JSONObject objectToJson() {
         JSONObject jsonListOfTelevisionShowLists = new JSONObject();
         jsonListOfTelevisionShowLists.put("Name", this.listOfListsName);
@@ -46,6 +47,7 @@ public class ListOfTelevisionShowLists implements Writable, WritableArray {
     }
 
     @Override
+    // EFFECTS: returns television lists in the list of television lists as a JSON array
     public JSONArray listOfObjectToJson() {
         JSONArray jsonTelevisionShowLists = new JSONArray();
 

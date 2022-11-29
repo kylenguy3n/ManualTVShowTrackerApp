@@ -12,6 +12,7 @@ import java.util.stream.Stream;
 
 // Class and methods are in reference to those used in the JsonReader class in:
 // https://github.students.cs.ubc.ca/CPSC210/JsonSerializationDemo
+//
 // Represents a reader that reads the television show lists from JSON data stored in a source file
 public class FileReader {
     private String source;
