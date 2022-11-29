@@ -19,24 +19,26 @@ public class TelevisionShowList implements Writable, WritableArray {
         this.listName = listName;
     }
 
-    // MODIFIES: this
+    // MODIFIES: this, Eventlog.getInstance()
     // EFFECTS: adds television show to the TV list if it is not already in the list
-    //          and returns true; otherwise returns false
+    //          and returns true and logs adding show to the event log; otherwise returns false
     public boolean addShowToList(TelevisionShow show) {
         if (televisionShowList.contains(show)) {
             return false;
         } else {
             this.televisionShowList.add(show);
+            EventLog.getInstance().logEvent(new Event("Added " + show.getTitle() + " to " + listName));
             return true;
         }
     }
 
-    // MODIFIES: this
+    // MODIFIES: this, Eventlog.getInstance()
     // EFFECTS: removes television show from the TV list if it is in the list and
-    //          returns true; otherwise returns false
+    //          returns true logs removing show to the event log; otherwise returns false
     public boolean removeShowFromList(TelevisionShow show) {
         if (televisionShowList.contains(show)) {
             this.televisionShowList.remove(show);
+            EventLog.getInstance().logEvent(new Event("Removed " + show.getTitle() + " from " + listName));
             return true;
         } else {
             return false;

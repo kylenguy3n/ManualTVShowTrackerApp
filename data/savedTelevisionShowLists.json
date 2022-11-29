@@ -1,36 +1,1140 @@
 {
     "Contained Lists": [
         {
-            "Television Shows": [{
-                "Show Number": 0,
-                "Show Rating": 0,
-                "Show Date Released": "",
-                "Show Seasons": [{
-                    "Season Date Released": "",
-                    "Season Episodes": [{
-                        "Episode Date Released": "",
-                        "Episode Number": 1,
-                        "Episode Rating": 0,
-                        "Episode Name": "Episode 1"
+            "Television Shows": [
+                {
+                    "Show Number": 0,
+                    "Show Rating": 10,
+                    "Show Date Released": "",
+                    "Show Seasons": [{
+                        "Season Date Released": "",
+                        "Season Episodes": [
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 1,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 1"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 2,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 2"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 3,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 3"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 4,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 4"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 5,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 5"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 6,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 6"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 7,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 7"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 8,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 8"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 9,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 9"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 10,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 10"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 11,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 11"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 12,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 12"
+                            }
+                        ],
+                        "Season Rating": 0,
+                        "Season Name": "Season 1",
+                        "Season Number": 1
                     }],
-                    "Season Rating": 0,
-                    "Season Name": "Season 1",
-                    "Season Number": 1
-                }],
-                "Show Name": "Hello",
-                "Show Description": ""
-            }],
+                    "Show Name": "Andor",
+                    "Show Description": "A Star Wars series about rogue anti-imperial radical Cassian Andor"
+                },
+                {
+                    "Show Number": 0,
+                    "Show Rating": 9,
+                    "Show Date Released": "",
+                    "Show Seasons": [
+                        {
+                            "Season Date Released": "",
+                            "Season Episodes": [
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 1,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 1"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 2,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 2"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 3,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 3"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 4,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 4"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 5,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 5"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 6,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 6"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 7,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 7"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 8,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 8"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 9,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 9"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 10,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 10"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 11,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 11"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 12,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 12"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 13,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 13"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 14,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 14"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 15,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 15"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 16,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 16"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 17,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 17"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 18,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 18"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 19,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 19"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 20,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 20"
+                                }
+                            ],
+                            "Season Rating": 0,
+                            "Season Name": "Season 1",
+                            "Season Number": 1
+                        },
+                        {
+                            "Season Date Released": "",
+                            "Season Episodes": [
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 1,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 1"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 2,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 2"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 3,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 3"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 4,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 4"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 5,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 5"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 6,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 6"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 7,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 7"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 8,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 8"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 9,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 9"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 10,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 10"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 11,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 11"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 12,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 12"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 13,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 13"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 14,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 14"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 15,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 15"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 16,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 16"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 17,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 17"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 18,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 18"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 19,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 19"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 20,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 20"
+                                }
+                            ],
+                            "Season Rating": 0,
+                            "Season Name": "Season 2",
+                            "Season Number": 2
+                        },
+                        {
+                            "Season Date Released": "",
+                            "Season Episodes": [
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 1,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 1"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 2,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 2"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 3,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 3"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 4,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 4"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 5,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 5"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 6,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 6"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 7,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 7"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 8,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 8"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 9,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 9"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 10,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 10"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 11,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 11"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 12,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 12"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 13,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 13"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 14,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 14"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 15,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 15"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 16,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 16"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 17,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 17"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 18,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 18"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 19,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 19"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 20,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 20"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 21,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 21"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 22,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 22"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 23,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 23"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 24,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 24"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 25,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 25"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 26,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 26"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 27,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 27"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 28,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 28"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 29,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 29"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 30,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 30"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 31,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 31"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 32,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 32"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 33,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 33"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 34,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 34"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 35,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 35"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 36,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 36"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 37,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 37"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 38,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 38"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 39,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 39"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 40,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 40"
+                                }
+                            ],
+                            "Season Rating": 0,
+                            "Season Name": "Season 3",
+                            "Season Number": 3
+                        },
+                        {
+                            "Season Date Released": "",
+                            "Season Episodes": [
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 1,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 1"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 2,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 2"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 3,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 3"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 4,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 4"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 5,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 5"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 6,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 6"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 7,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 7"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 8,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 8"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 9,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 9"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 10,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 10"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 11,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 11"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 12,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 12"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 13,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 13"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 14,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 14"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 15,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 15"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 16,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 16"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 17,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 17"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 18,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 18"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 19,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 19"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 20,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 20"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 21,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 21"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 22,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 22"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 23,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 23"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 24,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 24"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 25,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 25"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 26,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 26"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 27,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 27"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 28,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 28"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 29,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 29"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 30,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 30"
+                                }
+                            ],
+                            "Season Rating": 0,
+                            "Season Name": "Season 4",
+                            "Season Number": 4
+                        },
+                        {
+                            "Season Date Released": "",
+                            "Season Episodes": [
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 1,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 1"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 2,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 2"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 3,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 3"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 4,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 4"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 5,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 5"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 6,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 6"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 7,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 7"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 8,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 8"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 9,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 9"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 10,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 10"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 11,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 11"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 12,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 12"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 13,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 13"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 14,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 14"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 15,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 15"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 16,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 16"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 17,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 17"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 18,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 18"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 19,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 19"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 20,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 20"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 21,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 21"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 22,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 22"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 23,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 23"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 24,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 24"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 25,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 25"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 26,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 26"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 27,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 27"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 28,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 28"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 29,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 29"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 30,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 30"
+                                }
+                            ],
+                            "Season Rating": 0,
+                            "Season Name": "Season 5",
+                            "Season Number": 5
+                        },
+                        {
+                            "Season Date Released": "",
+                            "Season Episodes": [
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 1,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 1"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 2,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 2"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 3,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 3"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 4,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 4"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 5,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 5"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 6,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 6"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 7,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 7"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 8,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 8"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 9,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 9"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 10,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 10"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 11,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 11"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 12,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 12"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 13,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 13"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 14,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 14"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 15,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 15"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 16,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 16"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 17,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 17"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 18,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 18"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 19,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 19"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 20,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 20"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 21,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 21"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 22,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 22"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 23,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 23"
+                                },
+                                {
+                                    "Episode Date Released": "",
+                                    "Episode Number": 24,
+                                    "Episode Rating": 0,
+                                    "Episode Name": "Episode 24"
+                                }
+                            ],
+                            "Season Rating": 0,
+                            "Season Name": "Season 6",
+                            "Season Number": 6
+                        }
+                    ],
+                    "Show Name": "Jojo's Bizarre Adventures",
+                    "Show Description": "The adventures of the Jojo bloodline in fighing Dio Brando"
+                }
+            ],
             "List Name": "Plan to Watch"
         },
         {
-            "Television Shows": [{
-                "Show Number": 0,
-                "Show Rating": 0,
-                "Show Date Released": "",
-                "Show Seasons": [],
-                "Show Name": "Loser",
-                "Show Description": ""
-            }],
+            "Television Shows": [],
             "List Name": "Currently Watching"
         },
         {
@@ -39,7 +1143,7 @@
                 "Show Rating": 0,
                 "Show Date Released": "",
                 "Show Seasons": [],
-                "Show Name": "Ohio",
+                "Show Name": "Regular Show",
                 "Show Description": ""
             }],
             "List Name": "Completed"
@@ -47,11 +1151,492 @@
         {
             "Television Shows": [{
                 "Show Number": 0,
-                "Show Rating": 0,
+                "Show Rating": 10,
                 "Show Date Released": "",
-                "Show Seasons": [],
-                "Show Name": "Noob",
-                "Show Description": ""
+                "Show Seasons": [
+                    {
+                        "Season Date Released": "",
+                        "Season Episodes": [
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 1,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 1"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 2,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 2"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 3,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 3"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 4,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 4"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 5,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 5"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 6,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 6"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 7,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 7"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 8,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 8"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 9,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 9"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 10,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 10"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 11,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 11"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 12,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 12"
+                            }
+                        ],
+                        "Season Rating": 0,
+                        "Season Name": "Season 1",
+                        "Season Number": 1
+                    },
+                    {
+                        "Season Date Released": "",
+                        "Season Episodes": [
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 1,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 1"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 2,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 2"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 3,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 3"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 4,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 4"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 5,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 5"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 6,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 6"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 7,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 7"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 8,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 8"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 9,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 9"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 10,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 10"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 11,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 11"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 12,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 12"
+                            }
+                        ],
+                        "Season Rating": 0,
+                        "Season Name": "Season 2",
+                        "Season Number": 2
+                    },
+                    {
+                        "Season Date Released": "",
+                        "Season Episodes": [
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 1,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 1"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 2,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 2"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 3,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 3"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 4,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 4"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 5,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 5"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 6,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 6"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 7,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 7"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 8,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 8"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 9,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 9"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 10,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 10"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 11,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 11"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 12,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 12"
+                            }
+                        ],
+                        "Season Rating": 0,
+                        "Season Name": "Season 3",
+                        "Season Number": 3
+                    },
+                    {
+                        "Season Date Released": "",
+                        "Season Episodes": [
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 1,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 1"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 2,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 2"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 3,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 3"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 4,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 4"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 5,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 5"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 6,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 6"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 7,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 7"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 8,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 8"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 9,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 9"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 10,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 10"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 11,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 11"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 12,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 12"
+                            }
+                        ],
+                        "Season Rating": 0,
+                        "Season Name": "Season 4",
+                        "Season Number": 4
+                    },
+                    {
+                        "Season Date Released": "",
+                        "Season Episodes": [
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 1,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 1"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 2,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 2"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 3,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 3"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 4,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 4"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 5,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 5"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 6,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 6"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 7,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 7"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 8,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 8"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 9,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 9"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 10,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 10"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 11,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 11"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 12,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 12"
+                            }
+                        ],
+                        "Season Rating": 0,
+                        "Season Name": "Season 5",
+                        "Season Number": 5
+                    },
+                    {
+                        "Season Date Released": "",
+                        "Season Episodes": [
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 1,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 1"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 2,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 2"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 3,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 3"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 4,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 4"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 5,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 5"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 6,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 6"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 7,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 7"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 8,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 8"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 9,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 9"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 10,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 10"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 11,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 11"
+                            },
+                            {
+                                "Episode Date Released": "",
+                                "Episode Number": 12,
+                                "Episode Rating": 0,
+                                "Episode Name": "Episode 12"
+                            }
+                        ],
+                        "Season Rating": 0,
+                        "Season Name": "Season 6",
+                        "Season Number": 6
+                    }
+                ],
+                "Show Name": "Better Call Saul",
+                "Show Description": "Jimmy McGill's story of becoming a crooked lawyer"
             }],
             "List Name": "Favourite Shows"
         }

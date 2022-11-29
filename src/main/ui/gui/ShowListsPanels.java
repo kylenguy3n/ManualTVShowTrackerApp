@@ -138,7 +138,8 @@ public abstract class ShowListsPanels extends JPanel {
                         JOptionPane.YES_NO_OPTION);
                 if (input == 0) {
                     int showIndex = listPanel.getJList().getSelectedIndex();
-                    showList.getTelevisionShowList().remove(showIndex);
+                    TelevisionShow show = showList.getTelevisionShowList().get(showIndex);
+                    showList.removeShowFromList(show);
                     listPanel.refreshList(showList);
                     JOptionPane.showMessageDialog(null, "The show has been successfully removed.",
                             "Remove Successful", JOptionPane.INFORMATION_MESSAGE);

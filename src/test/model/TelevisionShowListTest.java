@@ -3,6 +3,7 @@ package model;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -28,6 +29,7 @@ public class TelevisionShowListTest {
 
     @Test
     public void testAddShowSuccess() {
+        EventLog eventLog = EventLog.getInstance();
         TelevisionShow showTest2 = new TelevisionShow("Better Call Saul");
         boolean addSuccess1 = listTest1.addShowToList(showTest1);
         boolean addSuccess2 = listTest1.addShowToList(showTest2);
@@ -37,6 +39,15 @@ public class TelevisionShowListTest {
         assertEquals(2, twiceFilledlist.size());
         assertEquals(showTest1, twiceFilledlist.get(0));
         assertEquals(showTest2, twiceFilledlist.get(1));
+
+        List<String> strings = new ArrayList<>();
+
+        for (Event nextEvent : eventLog) {
+            strings.add(nextEvent.getDescription());
+        }
+
+        assertEquals("Added Andor to Favourite Shows", strings.get(0));
+        assertEquals("Added Better Call Saul to Favourite Shows", strings.get(1));
     }
 
     @Test
@@ -50,11 +61,21 @@ public class TelevisionShowListTest {
 
     @Test
     public void testRemoveShowSuccess() {
+        EventLog eventLog = EventLog.getInstance();
         listTest2.addShowToList(showTest1);
         boolean removeSuccess = listTest2.removeShowFromList(showTest1);
         assertTrue(removeSuccess);
         List<TelevisionShow> nowEmptyList = listTest2.getTelevisionShowList();
         assertEquals(0, nowEmptyList.size());
+
+        List<String> strings = new ArrayList<>();
+
+        for (Event nextEvent : eventLog) {
+            strings.add(nextEvent.getDescription());
+        }
+
+        assertEquals("Added Andor to Plan To Watch", strings.get(0));
+        assertEquals("Removed Andor from Plan To Watch", strings.get(1));
     }
 
     @Test

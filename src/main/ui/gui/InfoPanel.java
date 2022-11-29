@@ -39,7 +39,7 @@ public class InfoPanel extends JPanel implements ActionListener {
         dateReleasedLabel = new JLabel("Date Released: ");
         descriptionLabel = new JLabel("Description: ");
         ratingLabel = new JLabel("Rating: ");
-        editButton = new JButton("Edit Details");
+        editButton = new JButton("Edit Details 'Unimplemented'"); // TODO
     }
 
     // MODIFIES: this
@@ -82,7 +82,7 @@ public class InfoPanel extends JPanel implements ActionListener {
         seasonField = new JTextField(Integer.toString(show.getShowSeasons().size()), 10);
         episodeField = new JTextField(Integer.toString(countEpisodes(show)), 10);
         dateReleasedField = new JTextField(show.getDateReleased(), 10);
-        descriptionField = new JTextArea(show.getDescription(), 10, 15);
+        descriptionField = new JTextArea(show.getDescription(), 5, 15);
         ratingField = new JTextField(Integer.toString(show.getRating()), 10);
 
         descriptionField.setOpaque(false);
@@ -145,6 +145,6 @@ public class InfoPanel extends JPanel implements ActionListener {
     // EFFECTS: Opens up a window to edit the field contents of the show's corresponding fields
     @Override
     public void actionPerformed(ActionEvent e) {
-        // STUB
+        // TODO
     }
 }

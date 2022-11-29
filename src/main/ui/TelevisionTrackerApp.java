@@ -283,28 +283,30 @@ public class TelevisionTrackerApp {
     // EFFECTS: selects which list to obtain shows from to display for menu options for removing a show
     private void removeFromCorrectList(int whichList) {
         if (whichList == 1) {
-            List<TelevisionShow> correctRemoveList = planToWatchList.getTelevisionShowList();
+            TelevisionShowList correctRemoveList = planToWatchList;
             removeShow(correctRemoveList);
         } else if (whichList == 2) {
-            List<TelevisionShow> correctRemoveList = currentlyWatchingList.getTelevisionShowList();
+            TelevisionShowList correctRemoveList = currentlyWatchingList;
             removeShow(correctRemoveList);
         } else if (whichList == 3) {
-            List<TelevisionShow> correctRemoveList = completedList.getTelevisionShowList();
+            TelevisionShowList correctRemoveList = completedList;
             removeShow(correctRemoveList);
         } else if (whichList == 4) {
-            List<TelevisionShow> correctRemoveList = favouriteShowsList.getTelevisionShowList();
+            TelevisionShowList correctRemoveList = favouriteShowsList;
             removeShow(correctRemoveList);
         }
     }
 
     // MODIFIES: this
     // EFFECTS: removes show from list via its index inputted
-    private void removeShow(List<TelevisionShow> correctRemoveList) {
+    private void removeShow(TelevisionShowList correctRemoveList) {
         String removeNumberInput = keyCommand();
         if (Integer.parseInt(removeNumberInput) == 0) {
             return;
         } else if (Integer.parseInt(removeNumberInput) != 0) {
-            correctRemoveList.remove(Integer.parseInt(removeNumberInput) - 1);
+            int showIndex = Integer.parseInt(removeNumberInput) - 1;
+            TelevisionShow show = correctRemoveList.getTelevisionShowList().get(showIndex);
+            correctRemoveList.removeShowFromList(show);
             System.out.println("\nThe show has been removed");
         }
     }

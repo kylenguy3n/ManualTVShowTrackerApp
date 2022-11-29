@@ -1,11 +1,14 @@
 package ui.gui;
 
+import model.Event;
+import model.EventLog;
 import model.ListOfTelevisionShowLists;
 import model.TelevisionShowList;
 import ui.FileManager;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -51,12 +54,13 @@ public class GUI {
     // EFFECTS: sets up JFrame for the TV Tracker GUI
     private void setUpFrame() {
         frame = new JFrame("Television Tracker");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         frame.setSize(900, 800);
         Image icon = Toolkit.getDefaultToolkit().getImage("data/images/Icon.png");
         frame.setIconImage(icon);
         frame.setVisible(true);
         frame.setLayout(new GridLayout());
+        exitOperation();
     }
 
     // EFFECTS: sets up each JPanels for each of the TV show lists
@@ -142,8 +146,31 @@ public class GUI {
         tabbedPane.addTab("Favourite Shows", favouriteShowsPanel);
     }
 
+    // MODIFIES: this
+    // EFFECTS: Adds message to be read on console when application frame is closed, with the event log
+    private void exitOperation() {
+        frame.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
+                System.out.println("\nThe GUI has been closed.\n");
+                printLog(EventLog.getInstance());
+                System.exit(0);
+            }
+        });
+    }
+
+    // EFFECTS: prints out the event log event by event to console
+    public void printLog(EventLog eventLog) {
+        System.out.println("Event Log:\n");
+
+        for (Event nextEvent : eventLog) {
+            System.out.println(nextEvent.toString() + "\n");
+        }
+    }
+
     // getters
     public ListOfTelevisionShowLists getListOfTVShowLists() {
         return this.listOfTVShowLists;
     }
+
 }
