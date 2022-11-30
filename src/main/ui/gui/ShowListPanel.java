@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 
 // Abstract class of JPanel for each show list to display the list's shows and selected show's details;
 // contains option to add or remove shows to list, refresh the list, and edit details of selected show
-public abstract class ShowListsPanels extends JPanel {
+public abstract class ShowListPanel extends JPanel {
     protected ListPanel listPanel;
     protected InfoPanel infoPanel;
     protected JButton addShowButton;
@@ -23,13 +23,13 @@ public abstract class ShowListsPanels extends JPanel {
     // EFFECTS: Initializes the show list panel with a title of the list, a JList with all the shows in that list,
     //          a JPanel with the details of selected shows in the list, and buttons to add or remove shows, and
     //          to edit a selected show and refresh the list
-    public ShowListsPanels(GUI gui, int whichList) {
+    public ShowListPanel(TelevisionTrackerGUI televisionTrackerGui, int whichList) {
 
         setShowListBorder(whichList);
         setLayout(new GridBagLayout());
         gridConstraints = new GridBagConstraints();
 
-        ListOfTelevisionShowLists showListsList =  gui.getListOfTVShowLists();
+        ListOfTelevisionShowLists showListsList =  televisionTrackerGui.getListOfTVShowLists();
         showList = selectWhichList(showListsList, whichList);
 
         infoPanel = new InfoPanel();

@@ -12,7 +12,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 // Creates the GUI screen for the TV Tracker application
-public class GUI {
+public class TelevisionTrackerGUI {
     private FileManager fileManager;
     private ListOfTelevisionShowLists listOfTVShowLists;
 
@@ -26,7 +26,7 @@ public class GUI {
     private FavouriteShowsPanel favouriteShowsPanel;
 
     // EFFECTS: initializes the program GUI
-    public GUI() {
+    public TelevisionTrackerGUI() {
         fileManager = new FileManager();
         setUpListOfTVShowLists();
         setUpFrame();

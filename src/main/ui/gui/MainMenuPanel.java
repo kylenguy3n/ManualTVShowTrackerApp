@@ -15,7 +15,7 @@ public class MainMenuPanel extends JPanel {
     private GridBagConstraints gridConstraints;
 
     // EFFECTS: Initializes the main menu panel with a title, logo, and 3 buttons for data functionality
-    public MainMenuPanel(GUI gui) {
+    public MainMenuPanel(TelevisionTrackerGUI televisionTrackerGui) {
         setBorder(BorderFactory.createTitledBorder("Main Menu"));
         setLayout(new GridBagLayout());
         gridConstraints = new GridBagConstraints();
@@ -29,9 +29,9 @@ public class MainMenuPanel extends JPanel {
 
         addImageLabel();
         addGuidanceLabel();
-        addSaveButton(gui);
-        addLoadButton(gui);
-        addClearButton(gui);
+        addSaveButton(televisionTrackerGui);
+        addLoadButton(televisionTrackerGui);
+        addClearButton(televisionTrackerGui);
     }
 
     // MODIFIES: this
@@ -53,7 +53,7 @@ public class MainMenuPanel extends JPanel {
 
     // MODIFIES: this
     // EFFECTS: Adds the save button as a component to the main menu panel and adds a sava data action when pressed
-    private void addSaveButton(GUI gui) {
+    private void addSaveButton(TelevisionTrackerGUI televisionTrackerGui) {
         gridConstraints.insets = new Insets(10, 5, 0, 5);
         gridConstraints.fill = GridBagConstraints.HORIZONTAL;
         gridConstraints.gridy = 2;
@@ -63,14 +63,14 @@ public class MainMenuPanel extends JPanel {
         saveButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                gui.saveData();
+                televisionTrackerGui.saveData();
             }
         });
     }
 
     // MODIFIES: this
     // EFFECTS: Adds the load button as a component to the main menu panel and adds a load data action when pressed
-    private void addLoadButton(GUI gui) {
+    private void addLoadButton(TelevisionTrackerGUI televisionTrackerGui) {
         gridConstraints.insets = new Insets(10, 5, 0, 5);
         gridConstraints.fill = GridBagConstraints.HORIZONTAL;
         gridConstraints.gridy = 3;
@@ -80,7 +80,7 @@ public class MainMenuPanel extends JPanel {
         loadButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                gui.loadData();
+                televisionTrackerGui.loadData();
             }
         });
     }
@@ -88,7 +88,7 @@ public class MainMenuPanel extends JPanel {
     // MODIFIES: this
     // EFFECTS: Adds the clear button as a component to the main menu panel and adds a clear data action when pressed
     //          with appropriate warnings to confirm clearing the data
-    private void addClearButton(GUI gui) {
+    private void addClearButton(TelevisionTrackerGUI televisionTrackerGui) {
         gridConstraints.insets = new Insets(10, 5, 0, 5);
         gridConstraints.fill = GridBagConstraints.HORIZONTAL;
         gridConstraints.gridy = 4;
@@ -98,7 +98,7 @@ public class MainMenuPanel extends JPanel {
         clearButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                gui.clearData();
+                televisionTrackerGui.clearData();
             }
         });
     }

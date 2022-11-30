@@ -1,6 +1,5 @@
 package persistence;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 // Represents writable content to return as JSON object

@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 // Television tracker application
-public class TelevisionTrackerApp {
+public class TelevisionTrackerConsole {
     private static final String SAVED_FILE_DIR = "./data/savedTelevisionShowLists.json";
     private TelevisionShowList planToWatchList;
     private TelevisionShowList currentlyWatchingList;
@@ -21,7 +21,7 @@ public class TelevisionTrackerApp {
     private FileWriter fileWriter;
 
     // EFFECTS: initializes television show lists and runs the television tracker application
-    public TelevisionTrackerApp() throws FileNotFoundException {
+    public TelevisionTrackerConsole() throws FileNotFoundException {
         planToWatchList = new TelevisionShowList("Plan to Watch");
         currentlyWatchingList = new TelevisionShowList("Currently Watching");
         completedList = new TelevisionShowList("Completed");

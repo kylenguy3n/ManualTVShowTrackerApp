@@ -85,4 +85,11 @@ Removed Test Show 2 from Currently Watching
 Given more time on the project, I would:
 
 - Implement the edit button for editing the details of shows in the GUI 
-- Refactor 
+- Refactor so that TelevisionComponent implements Writable, instead of each class that extends TelevisionComponent
+  to implement Writable
+- Refactor the methods from TelevisionTrackerConsole and TelevisionTrackerGUI that print to console to a new class 
+  PrintToConsole
+- Refactor the saving and loading methods from TelevisionTrackerConsole to use the methods within FileManager instead 
+  which I made when I was constructing the GUI classes
+- Have the GUI class extend JFrame to get the methods directly instead of using a JFrame field and having to override a
+  new WindowListener event within a GUI class method

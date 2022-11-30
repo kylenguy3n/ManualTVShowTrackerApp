@@ -11,7 +11,7 @@ import java.awt.*;
 // Creates a JList panel to list shows of a TV show list
 public class ListPanel extends JPanel implements ListSelectionListener {
     private DefaultListModel<String> listModel;
-    private JList<TelevisionShow> showJList;
+    private JList<DefaultListModel> showJList;
     private TelevisionShowList showList;
     private InfoPanel infoPanel;
 
@@ -57,7 +57,7 @@ public class ListPanel extends JPanel implements ListSelectionListener {
     }
 
     // getters
-    public JList<TelevisionShow> getJList() {
+    public JList<DefaultListModel> getJList() {
         return this.showJList;
     }
 }
