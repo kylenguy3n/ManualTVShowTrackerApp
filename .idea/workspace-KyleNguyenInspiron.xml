@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23c336c1-f053-4e95-8c6b-606feeed67f7" name="Changes" comment="P3: Added Main Menu portion of GUI. Now need to add panel to show TV show lists.">
+      <change beforePath="$PROJECT_DIR$/src/main/ui/gui/MainMenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/gui/MainMenuPanel.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GI5bVhVPKyWgp08pWmSzNBN8Vs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kylng.KYLEN-PC/OneDrive/Documents/UBC/BCS/CPSC 210/Hospital-Record-Manager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kylng.KYLEN-PC\OneDrive\Documents\UBC\BCS\CPSC 210\Project\project_k1s9g\data\images" />
+      <recent name="C:\Users\kylng.KYLEN-PC\OneDrive\Documents\UBC\BCS\CPSC 210\project_k1s9g\data" />
+      <recent name="C:\Users\kylng.KYLEN-PC\OneDrive\Documents\UBC\BCS\CPSC 210\project_k1s9g\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kylng.KYLEN-PC\OneDrive\Documents\UBC\BCS\CPSC 210\Project\project_k1s9g\data\images" />
+      <recent name="C:\Users\kylng.KYLEN-PC\OneDrive\Documents\UBC\BCS\CPSC 210\Project\project_k1s9g\data" />
+      <recent name="C:\Users\kylng.KYLEN-PC\OneDrive\Documents\UBC\BCS\CPSC 210\Project\project_k1s9g\images" />
+      <recent name="C:\Users\kylng.KYLEN-PC\OneDrive\Documents\UBC\BCS\CPSC 210\Project\project_k1s9g\Images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ui.Main">
+    <configuration name="ui.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.Main" />
+      <module name="Project-Starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project-Starter" />
+      <extension name="coverage" sample_coverage="false">
+        <pattern>
+          <option name="PATTERN" value="persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="MAIN_CLASS_NAME" value="persistence.FileReaderTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileWriterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project-Starter" />
+      <extension name="coverage" sample_coverage="false">
+        <pattern>
+          <option name="PATTERN" value="persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="persistence" />
+      <option name="MAIN_CLASS_NAME" value="persistence.FileWriterTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelevisionShowListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project-Starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.TelevisionShowListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelevisionShowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project-Starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.TelevisionShowTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ui.Main" />
+      <item itemvalue="JUnit.FileReaderTest" />
+      <item itemvalue="JUnit.FileWriterTest" />
+      <item itemvalue="JUnit.TelevisionShowListTest" />
+      <item itemvalue="JUnit.TelevisionShowTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ui.Main" />
+        <item itemvalue="JUnit.FileWriterTest" />
+        <item itemvalue="JUnit.FileReaderTest" />
+        <item itemvalue="JUnit.TelevisionShowTest" />
+        <item itemvalue="JUnit.TelevisionShowListTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23c336c1-f053-4e95-8c6b-606feeed67f7" name="Changes" comment="" />
+      <created>1666063328491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666063328491</updated>
+    </task>
+    <task id="LOCAL-00001" summary="P2: Added data persistence to application">
+      <created>1666811640967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666811640967</updated>
+    </task>
+    <task id="LOCAL-00002" summary="P2: Added data persistence tests, ensured code coverage is 100%.">
+      <created>1666834446778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666834446778</updated>
+    </task>
+    <task id="LOCAL-00003" summary="P2: Fixed some spacing">
+      <created>1666835305826</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666835305826</updated>
+    </task>
+    <task id="LOCAL-00004" summary="P2: Added json files to data folder and pushed to repository. This should be the final version of P2.">
+      <created>1666835357209</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666835357209</updated>
+    </task>
+    <task id="LOCAL-00005" summary="P3: Created a JFrame for the GUI so far. Much work to be done with adding a panel for the main menu, and the rest of the TV show lists">
+      <created>1668578500634</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668578500634</updated>
+    </task>
+    <task id="LOCAL-00006" summary="P3: Added Main Menu portion of GUI. Now need to add panel to show TV show lists.">
+      <created>1668598401939</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668598401939</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="P2: Added data persistence to application" />
+    <MESSAGE value="P2: Added data persistence tests, ensured code coverage is 100%." />
+    <MESSAGE value="P2: Fixed some spacing" />
+    <MESSAGE value="P2: Added json files to data folder and pushed to repository. This should be the final version of P2." />
+    <MESSAGE value="P3: Created a JFrame for the GUI so far. Much work to be done with adding a panel for the main menu, and the rest of the TV show lists" />
+    <MESSAGE value="P3: Added Main Menu portion of GUI. Now need to add panel to show TV show lists." />
+    <option name="LAST_COMMIT_MESSAGE" value="P3: Added Main Menu portion of GUI. Now need to add panel to show TV show lists." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Project_Starter$TelevisionShowTest.ic" NAME="TelevisionShowTest Coverage Results" MODIFIED="1666834255429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Project_Starter$FileWriterTest.ic" NAME="FileWriterTest Coverage Results" MODIFIED="1666834307429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>persistence.*</FILTER>
+      <FILTER>model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Project_Starter$ListOfTelevisionShowListsTest.ic" NAME="ListOfTelevisionShowListsTest Coverage Results" MODIFIED="1666834224767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Project_Starter$TelevisionSeasonTest.ic" NAME="TelevisionSeasonTest Coverage Results" MODIFIED="1666834246120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Project_Starter$TelevisionShowListTest.ic" NAME="TelevisionShowListTest Coverage Results" MODIFIED="1666834250994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Project_Starter$FileReaderTest.ic" NAME="FileReaderTest Coverage Results" MODIFIED="1666834301721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>persistence.*</FILTER>
+      <FILTER>model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Project_Starter$TelevisionEpisodeTest.ic" NAME="TelevisionEpisodeTest Coverage Results" MODIFIED="1666834230981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>model.*</FILTER>
+    </SUITE>
+  </component>
+</project>
